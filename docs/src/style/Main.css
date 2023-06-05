@@ -1,11 +1,25 @@
+	
+@font-face {
+  font-family: "poppins-bold";
+  src: url('../Fonts/Poppins/Poppins-Bold.woff2') format('woff2'), 
+    url('../Fonts/Poppins/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url('../Fonts/Poppins/Poppins-Bold.woff2') format('woff2'), 
+    url('../Fonts/Poppins/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   background-color: hsl(0, 0%, 13%);
   color: white;
   max-width: 80rem;
   margin: auto;
-}
-
-.background{
   background-image: url(../images/background.jpg);
   background-size: cover;
   border-top-left-radius: 2rem;
@@ -14,41 +28,42 @@ body {
 
 header {
   display: flex;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  justify-content: space-around;
 }
 
 header img {
   border-radius: 3rem;
   height: 20rem;
   width: 20rem;
-  margin-left: 7rem;
-  margin-top: 5rem;
 }
 
-.intro{
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  width: 30rem;
-  margin-left: 10rem;
+.intro {
+  width: 25rem;
+  height: 20rem;
+  margin-top: 3rem;
+  font-family: poppins-bold;
 }
 
 
-nav ul{
-list-style: none;
-display: flex;
-justify-content: end;
-padding-right: 5rem;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  padding-right: 5rem;
 }
 
 nav li {
   padding: 2rem;
 }
 
-.skills{
+.skills {
   background-color: #C1C1C1;
   height: 10rem;
   color: hsl(0, 0%, 13%);
 }
 
-.skills h2{
+.skills h2 {
   margin-top: 0;
 }
