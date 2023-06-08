@@ -8,9 +8,25 @@
 }
 
 @font-face {
-  font-family: "poppins-bold";
-  src: url('../Fonts/Poppins/Poppins-Bold.woff2') format('woff2'), 
-    url('../Fonts/Poppins/Poppins-Bold.woff') format('woff');
+  font-family: "poppins-extrabold";
+  src: url('../Fonts/Poppins/Poppins-ExtraBold.woff2') format('woff2'), 
+    url('../Fonts/Poppins/Poppins-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url('../Fonts/Poppins/Poppins-Regular.woff2') format('woff2'), 
+    url('../Fonts/Poppins/Poppins-Regular.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url('../Fonts/Fira/Fira Code Bold.woff2') format('woff2'), 
+    url('../Fonts/Fira/Fira Code Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -26,6 +42,36 @@ body {
   border-top-right-radius: 2rem;
 }
 
+
+nav {
+  margin: -1rem;
+  border-radius: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: poppins-bold;
+}
+
+nav a:hover {
+color: hsl(344, 81%, 51%);
+}
+
+nav button {
+  background-color: hsl(344, 81%, 51%);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-family: poppins-bold;
+}
+
+nav button:hover {
+cursor: pointer;
+}
+
 header {
   display: flex;
   margin-top: 5rem;
@@ -34,9 +80,10 @@ header {
 }
 
 header img {
-  border-radius: 3rem;
+  border-radius: 2.5rem;
   height: 20rem;
   width: 20rem;
+  box-shadow: 5px 10px hsl(0, 0%, 9%);
 }
 
 .intro {
@@ -44,6 +91,25 @@ header img {
   height: 20rem;
   margin-top: 3rem;
   font-family: poppins-bold;
+}
+
+.hello {
+  border: solid 0.5rem hsl(344, 81%, 51%);
+  background-color: hsl(344, 81%, 51%);
+  border-radius: 0.5rem;
+}
+
+.intro h1 {
+  font-family: Fira;
+}
+
+.intro p {
+  font-family: poppins;
+}
+
+.intro p span {
+  font-family: poppins-extrabold;
+  color: hsl(344, 81%, 51%);
 }
 
 
@@ -59,11 +125,31 @@ nav li {
 }
 
 .skills {
-  background-color: #C1C1C1;
+  background-color: white;
+  border-radius: 0.5rem;
   height: 10rem;
   color: hsl(0, 0%, 13%);
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 
 .skills h2 {
-  margin-top: 0;
+padding-top: 1rem;
+padding-left: 1rem;
+text-decoration: underline;
+font-family: Fira;
+}
+
+.skills ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.skills img {
+width: 5rem
+}
+
+.skills img :hover {
+  color: hsl(344, 81%, 51%);
 }
