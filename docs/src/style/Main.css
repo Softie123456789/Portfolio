@@ -126,11 +126,9 @@
 	.skills {
 	  background-color: white;
 	  border-radius: 0.5rem;
-	  height: 10rem;
 	  color: hsl(0, 0%, 13%);
 	  margin-left: 8rem;
 	  margin-right: 8rem;
-	  padding-bottom: 10rem;
 	  box-shadow: 5px 10px hsl(0, 0%, 9%);
 	}
 
@@ -139,6 +137,7 @@
 	  padding-left: 1rem;
 	  text-decoration: underline;
 	  font-family: Fira;
+    margin-bottom: 2rem;
 	}
 
 	.skills ul {
@@ -146,6 +145,7 @@
 	  list-style: none;
 	  justify-content: space-around;
 	  margin: auto;
+    padding-bottom: 2.5rem;
 	}
 
 	.skills li {
