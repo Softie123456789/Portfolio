@@ -1,155 +1,229 @@
-	
-@font-face {
-  font-family: "poppins-bold";
-  src: url('../Fonts/Poppins/Poppins-Bold.woff2') format('woff2'), 
-    url('../Fonts/Poppins/Poppins-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
+	@font-face {
+	  font-family: "poppins-bold";
+	  src: url('../Fonts/Poppins/Poppins-Bold.woff2') format('woff2'),
+	    url('../Fonts/Poppins/Poppins-Bold.woff') format('woff');
+	  font-weight: bold;
+	  font-style: normal;
+	}
 
-@font-face {
-  font-family: "poppins-extrabold";
-  src: url('../Fonts/Poppins/Poppins-ExtraBold.woff2') format('woff2'), 
-    url('../Fonts/Poppins/Poppins-ExtraBold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
+	@font-face {
+	  font-family: "poppins-extrabold";
+	  src: url('../Fonts/Poppins/Poppins-ExtraBold.woff2') format('woff2'),
+	    url('../Fonts/Poppins/Poppins-ExtraBold.woff') format('woff');
+	  font-weight: bold;
+	  font-style: normal;
+	}
 
-@font-face {
-  font-family: "poppins";
-  src: url('../Fonts/Poppins/Poppins-Regular.woff2') format('woff2'), 
-    url('../Fonts/Poppins/Poppins-Regular.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
+	@font-face {
+	  font-family: "poppins";
+	  src: url('../Fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+	    url('../Fonts/Poppins/Poppins-Regular.woff') format('woff');
+	  font-weight: bold;
+	  font-style: normal;
+	}
 
-@font-face {
-  font-family: "Fira";
-  src: url('../Fonts/Fira/Fira Code Bold.woff2') format('woff2'), 
-    url('../Fonts/Fira/Fira Code Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
+	@font-face {
+	  font-family: "Fira";
+	  src: url('../Fonts/Fira/Fira Code Bold.woff2') format('woff2'),
+	    url('../Fonts/Fira/Fira Code Bold.woff') format('woff');
+	  font-weight: bold;
+	  font-style: normal;
+	}
 
-body {
-  background-color: hsl(0, 0%, 13%);
-  color: white;
-  max-width: 80rem;
-  margin: auto;
-  background-image: url(../images/background.jpg);
-  background-size: cover;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-}
-
-
-nav {
-  margin: -1rem;
-  border-radius: 0.5rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-family: poppins-bold;
-}
-
-nav a:hover {
-color: hsl(344, 81%, 51%);
-}
-
-nav button {
-  background-color: hsl(344, 81%, 51%);
-  border: none;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  color: white;
-  font-family: poppins-bold;
-}
-
-nav button:hover {
-cursor: pointer;
-}
-
-header {
-  display: flex;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  justify-content: space-around;
-}
-
-header img {
-  border-radius: 2.5rem;
-  height: 20rem;
-  width: 20rem;
-  box-shadow: 5px 10px hsl(0, 0%, 9%);
-}
-
-.intro {
-  width: 25rem;
-  height: 20rem;
-  margin-top: 3rem;
-  font-family: poppins-bold;
-}
-
-.hello {
-  border: solid 0.5rem hsl(344, 81%, 51%);
-  background-color: hsl(344, 81%, 51%);
-  border-radius: 0.5rem;
-}
-
-.intro h1 {
-  font-family: Fira;
-}
-
-.intro p {
-  font-family: poppins;
-}
-
-.intro p span {
-  font-family: poppins-extrabold;
-  color: hsl(344, 81%, 51%);
-}
+	body {
+	  background-color: hsl(0, 0%, 13%);
+	  color: white;
+	  max-width: 80rem;
+	  margin: auto;
+	  background-image: url(../images/background.jpg);
+	  background-size: cover;
+	  border-top-left-radius: 2rem;
+	  border-top-right-radius: 2rem;
+	}
 
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: end;
-  padding-right: 5rem;
-}
+	nav {
+	  margin: -1rem;
+	  border-radius: 0.5rem;
+	}
 
-nav li {
-  padding: 2rem;
-}
+	nav a {
+	  text-decoration: none;
+	  color: white;
+	  font-family: poppins-bold;
+	}
 
-.skills {
-  background-color: white;
-  border-radius: 0.5rem;
-  height: 10rem;
-  color: hsl(0, 0%, 13%);
-  margin-left: 8rem;
-  margin-right: 8rem;
-}
+	nav a:hover {
+	  color: hsl(344, 81%, 51%);
+	}
 
-.skills h2 {
-padding-top: 1rem;
-padding-left: 1rem;
-text-decoration: underline;
-font-family: Fira;
-}
+	nav button {
+	  background-color: hsl(344, 81%, 51%);
+	  border: none;
+	  padding: 0.5rem;
+	  border-radius: 0.5rem;
+	  text-decoration: none;
+	  color: white;
+	  font-family: poppins-bold;
+	}
 
-.skills ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-}
+	nav button:hover {
+	  cursor: pointer;
+	}
 
-.skills img {
-width: 5rem
-}
+	header {
+	  display: flex;
+	  margin-top: 5rem;
+	  margin-bottom: 5rem;
+	  justify-content: space-around;
+	}
 
-.skills img :hover {
-  color: hsl(344, 81%, 51%);
-}
+	header img {
+	  border-radius: 2.5rem;
+	  height: 20rem;
+	  width: 20rem;
+	  box-shadow: 5px 10px hsl(0, 0%, 9%);
+	}
+
+	.intro {
+	  width: 25rem;
+	  height: 20rem;
+	  margin-top: 3rem;
+	  font-family: poppins-bold;
+	}
+
+	.hello {
+	  border: solid 0.5rem hsl(344, 81%, 51%);
+	  background-color: hsl(344, 81%, 51%);
+	  border-radius: 0.5rem;
+	}
+
+	.intro h1 {
+	  font-family: Fira;
+	}
+
+	.intro p {
+	  font-family: poppins;
+	}
+
+	.intro p span {
+	  font-family: poppins-extrabold;
+	  color: hsl(344, 81%, 51%);
+	}
+
+
+	nav ul {
+	  list-style: none;
+	  display: flex;
+	  justify-content: end;
+	  padding-right: 5rem;
+	}
+
+	nav li {
+	  padding: 2rem;
+	}
+
+	.skills {
+	  background-color: white;
+	  border-radius: 0.5rem;
+	  height: 10rem;
+	  color: hsl(0, 0%, 13%);
+	  margin-left: 8rem;
+	  margin-right: 8rem;
+	  padding-bottom: 10rem;
+	  box-shadow: 5px 10px hsl(0, 0%, 9%);
+	}
+
+	.skills h2 {
+	  padding-top: 1rem;
+	  padding-left: 1rem;
+	  text-decoration: underline;
+	  font-family: Fira;
+	}
+
+	.skills ul {
+	  display: flex;
+	  list-style: none;
+	  justify-content: space-around;
+	  margin: auto;
+	}
+
+	.skills li {
+	  display: flex;
+	  flex-direction: column;
+	  text-align: center;
+	  font-family: Fira;
+	}
+
+	.skills img {
+	  width: 6rem;
+	  margin-bottom: 1rem;
+	}
+
+	.balk {
+	  margin-top: 1rem;
+	  border: solid black 2px;
+	  height: 1rem;
+	  border-radius: 0.3rem;
+	  overflow: hidden;
+	}
+
+	.inner-balk0 {
+	  background: rgb(0, 0, 0);
+	  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 6%, rgba(231, 29, 83, 1) 100%);
+	  border-radius: 0.3rem;
+	  position: relative;
+	  height: 100%;
+	  overflow: hidden;
+	  margin-top: -0.1rem;
+	  padding-bottom: 0.3rem;
+    width: 5rem;
+	}
+
+	.inner-balk1 {
+	  background: rgb(0, 0, 0);
+	  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 6%, rgba(231, 29, 83, 1) 100%);
+	  border-radius: 0.3rem;
+	  position: relative;
+	  height: 100%;
+	  overflow: hidden;
+	  margin-top: -0.1rem;
+	  padding-bottom: 0.3rem;
+    width: 4.5rem;
+	}
+
+	.inner-balk2 {
+	  background: rgb(0, 0, 0);
+	  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 6%, rgba(231, 29, 83, 1) 100%);
+	  border-radius: 0.3rem;
+	  position: relative;
+	  height: 100%;
+	  overflow: hidden;
+	  margin-top: -0.1rem;
+	  padding-bottom: 0.3rem;
+    width: 4rem;
+	}
+
+	.inner-balk3 {
+	  background: rgb(0, 0, 0);
+	  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 6%, rgba(231, 29, 83, 1) 100%);
+	  border-radius: 0.3rem;
+	  position: relative;
+	  height: 100%;
+	  overflow: hidden;
+	  margin-top: -0.1rem;
+	  padding-bottom: 0.3rem;
+    width: 5.5rem;
+	}
+
+	.inner-balk4 {
+	  background: rgb(0, 0, 0);
+	  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 6%, rgba(231, 29, 83, 1) 100%);
+	  border-radius: 0.3rem;
+	  position: relative;
+	  height: 100%;
+	  overflow: hidden;
+	  margin-top: -0.1rem;
+	  padding-bottom: 0.3rem;
+    width: 5rem;
+	}
