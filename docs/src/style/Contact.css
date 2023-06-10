@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "poppins-bold";
+  src: url('../Fonts/Poppins/Poppins-Bold.woff2') format('woff2'),
+    url('../Fonts/Poppins/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins-extrabold";
+  src: url('../Fonts/Poppins/Poppins-ExtraBold.woff2') format('woff2'),
+    url('../Fonts/Poppins/Poppins-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url('../Fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+    url('../Fonts/Poppins/Poppins-Regular.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url('../Fonts/Fira/Fira Code Bold.woff2') format('woff2'),
+    url('../Fonts/Fira/Fira Code Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  background-color: hsl(0, 0%, 13%);
+  color: white;
+  max-width: 66rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+nav {
+  margin: -1rem;
+  border-radius: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: poppins-bold;
+}
+
+nav a:hover {
+  color: hsl(344, 81%, 51%);
+}
+
+button {
+  background-color: hsl(344, 81%, 51%);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-family: poppins-bold;
+}
+
+nav button:hover {
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 630px) {
+  nav ul {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+nav li {
+  padding: 2rem;
+}
+
+h2 {
+  font-family: poppins-bold;
+}
+
+main {
+  max-width: 40rem;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first {
+  margin-right: 2rem;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-family: Fira;
+  border: solid 2px hsl(344, 81%, 51%);
+  border-radius: 0.5rem;
+  width: 15rem;
+}
+
+textarea {
+  font-family: Fira;
+  border: solid 2px hsl(344, 81%, 51%);
+  border-radius: 0.5rem;
+}
+
+.button {
+  background-color: hsl(344, 81%, 51%);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
+  font-family: poppins-bold;
+  width: 5rem;
+}
+
+footer {
+  padding-top: 5rem;
+  margin: 2rem;
+  bottom: 0;
+  position: absolute;
+  width: 66rem;
+}
+
+footer img {
+  max-width: 2.5rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+footer ul li {
+  flex: 1;
+}
+
+footer span {
+  font-family: Fira;
+  display: flex;
+  justify-content: center;
+}
