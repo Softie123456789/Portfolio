@@ -33,14 +33,15 @@
 	body {
 	  background-color: hsl(0, 0%, 13%);
 	  color: white;
-	  max-width: 80rem;
+	  max-width: 66rem;
+	  padding-left: 1rem;
+	  padding-right: 1rem;
 	  margin: auto;
 	  background-image: url(../images/background.jpg);
 	  background-size: cover;
 	  border-top-left-radius: 2rem;
 	  border-top-right-radius: 2rem;
 	}
-
 
 	nav {
 	  margin: -1rem;
@@ -57,7 +58,7 @@
 	  color: hsl(344, 81%, 51%);
 	}
 
-	nav button {
+	button {
 	  background-color: hsl(344, 81%, 51%);
 	  border: none;
 	  padding: 0.5rem;
@@ -75,13 +76,14 @@
 	  display: flex;
 	  margin-top: 5rem;
 	  margin-bottom: 5rem;
-	  justify-content: space-around;
+	  justify-content: space-between;
+	  flex-wrap: wrap-reverse;
 	}
 
 	header img {
 	  border-radius: 2.5rem;
-	  height: 20rem;
-	  width: 20rem;
+	  max-height: 20rem;
+	  max-width: 20rem;
 	  box-shadow: 5px 10px hsl(0, 0%, 9%);
 	}
 
@@ -116,29 +118,68 @@
 	  list-style: none;
 	  display: flex;
 	  justify-content: end;
-	  padding-right: 5rem;
+	}
+
+	@media (max-width: 630px) {
+	  nav ul {
+	    justify-content: center;
+	    flex-direction: column;
+      text-align: center;
+	  }
 	}
 
 	nav li {
 	  padding: 2rem;
 	}
 
+	h2 {
+	  text-decoration: underline;
+	  font-family: poppins-extrabold;
+	}
+
+	.about {
+	  margin-bottom: 5rem;
+	}
+
+	.about h2 {
+	  margin-bottom: 0.5rem;
+	}
+
+	.about p {
+	  font-family: poppins;
+	  max-width: 30rem;
+	}
+
+	.about span {
+	  color: hsl(344, 81%, 51%);
+	  font-family: Fira;
+	}
+
+	.about-flex {
+	  display: flex;
+	  flex-direction: column;
+	}
+
+	.about .left {
+	  margin-top: 2rem;
+	  margin-bottom: 1rem;
+	}
+
+	.about .right {
+	  align-self: last baseline;
+	}
+
 	.skills {
 	  background-color: white;
 	  border-radius: 0.5rem;
-	  height: 10rem;
 	  color: hsl(0, 0%, 13%);
-	  margin-left: 8rem;
-	  margin-right: 8rem;
-	  padding-bottom: 10rem;
 	  box-shadow: 5px 10px hsl(0, 0%, 9%);
 	}
 
 	.skills h2 {
 	  padding-top: 1rem;
 	  padding-left: 1rem;
-	  text-decoration: underline;
-	  font-family: Fira;
+	  margin-bottom: 2rem;
 	}
 
 	.skills ul {
@@ -146,6 +187,9 @@
 	  list-style: none;
 	  justify-content: space-around;
 	  margin: auto;
+	  padding-left: 0rem;
+	  padding-bottom: 2.5rem;
+	  flex-wrap: wrap;
 	}
 
 	.skills li {
@@ -153,6 +197,7 @@
 	  flex-direction: column;
 	  text-align: center;
 	  font-family: Fira;
+	  margin: 1rem;
 	}
 
 	.skills img {
@@ -177,7 +222,7 @@
 	  overflow: hidden;
 	  margin-top: -0.1rem;
 	  padding-bottom: 0.3rem;
-    width: 5rem;
+	  width: 5rem;
 	}
 
 	.inner-balk1 {
@@ -189,7 +234,7 @@
 	  overflow: hidden;
 	  margin-top: -0.1rem;
 	  padding-bottom: 0.3rem;
-    width: 4.5rem;
+	  width: 4.5rem;
 	}
 
 	.inner-balk2 {
@@ -201,7 +246,7 @@
 	  overflow: hidden;
 	  margin-top: -0.1rem;
 	  padding-bottom: 0.3rem;
-    width: 4rem;
+	  width: 4rem;
 	}
 
 	.inner-balk3 {
@@ -213,7 +258,7 @@
 	  overflow: hidden;
 	  margin-top: -0.1rem;
 	  padding-bottom: 0.3rem;
-    width: 5.5rem;
+	  width: 5.5rem;
 	}
 
 	.inner-balk4 {
@@ -225,5 +270,80 @@
 	  overflow: hidden;
 	  margin-top: -0.1rem;
 	  padding-bottom: 0.3rem;
-    width: 5rem;
+	  width: 5rem;
+	}
+
+	.diensten {
+	  margin-top: 5rem;
+	}
+
+	.diensten p {
+	  font-family: poppins;
+	  max-width: 30rem;
+	}
+
+	.diensten .first {
+	  margin-bottom: 2rem;
+	  margin-top: 2rem;
+	}
+
+	.diensten-flex {
+	  display: flex;
+	  flex-direction: column;
+	}
+
+	.button-dienst {
+	  display: flex;
+	  justify-content: space-between;
+	  flex-wrap: wrap-reverse;
+	}
+
+	.button-dienst a {
+	  align-self: center;
+	  margin-left: 10rem;
+	}
+
+	.button-dienst a button {
+	  width: 10rem;
+	  height: 3rem;
+	  font-size: medium;
+	  cursor: pointer;
+	}
+
+	@media (max-width: 1000px) {
+	  .button-dienst a {
+	    margin-left: 5rem;
+	  }
+	}
+
+	@media (max-width: 768px) {
+	  .button-dienst a {
+	    margin-top: 2rem;
+	  }
+	}
+
+	footer {
+	  padding-top: 5rem;
+	  margin: 2rem;
+	}
+
+	footer img {
+	  max-width: 2.5rem;
+	}
+
+	footer ul {
+	  list-style: none;
+	  display: flex;
+	  justify-content: space-around;
+	  margin-bottom: 3rem;
+	}
+
+	footer ul li {
+	  flex: 1;
+	}
+
+	footer span {
+	  font-family: Fira;
+	  display: flex;
+	  justify-content: center;
 	}
