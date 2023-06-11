@@ -100,11 +100,12 @@ main ul {
 
 main a {
   color: black;
+  text-decoration: none;
 }
 
 div {
-  width: 12rem;
-  height: 10rem;
+  width: 15rem;
+  height: 30rem;
 font-family: Fira;
 margin-bottom: 2rem;
 background-color: white;
@@ -118,11 +119,17 @@ div:hover {
 
 div h3 {
   margin-left: 0.5rem;
+  text-decoration: underline;
+}
+
+div p {
+  font-family: poppins;
+  margin-left: 0.5rem;
 }
 
 div img {
-  width: 12rem;
-  height: 6rem;
+  width: 15rem;
+  height: 7.5rem;
   border-radius: 0.5rem;
   border-bottom: solid black 1px;
 }
@@ -131,9 +138,6 @@ div img {
 footer {
   padding-top: 5rem;
   margin: 2rem;
-  bottom: 0;
-  position: absolute;
-  width: 66rem;
 }
 
 footer img {
