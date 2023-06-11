@@ -82,6 +82,7 @@
 
 	header img {
 	  border-radius: 2.5rem;
+    margin-right: 5rem;
 	  max-height: 20rem;
 	  max-width: 20rem;
 	  box-shadow: 5px 10px hsl(0, 0%, 9%);
